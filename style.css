@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+header::before {
+    content: "";
+    background-image: url('1126781.jpg');
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.3;
+
+}
+
+header {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+header i{
+    font-size: 30px;
+}
+
+nav {
+    position: relative;
+    left: 920px;
+}
+
+nav a {
+    margin: 0px 12px;
+    font-size: 20px;
+    font-family: Calibri;
+    text-decoration: none;
+    color: rgb(232, 228, 228);
+    font-weight: bold;
+}
+nav a:hover{
+    color: crimson;
+}
+nav::after{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+nav:hover::after{
+    width: 100%;
+}
+.container{
+    height: 400px;
+    width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hp{
+    text-align: center;
+    font-family: calibri;;
+}
+.hp h1{
+    font-size: 70px;
+    margin-bottom: 5px;
+}
+.buttton{
+    margin: 12px;
+    padding: 15px;
+   
+}
+.btn{
+    width: 200px;
+    padding: 7px 15px;
+    margin: 1px 5px;
+    border: 2px solid #009688;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    animation-name: btn;
+    animation-duration: 2s;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.btn:hover span{
+   width: 100%;
+}
+.btn:hover{
+    border: none;
+    color: rgb(246, 246, 246);
+}
+
+
+#designs{
+    height: 400px;
+    width: 100%;
+    position: relative;
+    top: 220px;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    flex-direction: column;
+}
+#designs::before{
+    content: "";
+    background: url('bg-2.jpg');
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.4;
+}
+#designs h2{
+    margin-top: 0px;
+    font-family: 'Didact Gothic', sans-serif;
+    letter-spacing: 3px;
+}
+.boxes{
+    display: flex;
+}
+.box{
+    height: 300px;
+    width: 300px;
+    border: 1px solid white;
+    margin-right: 30px;
+}
+.box:hover{
+    box-shadow: 0px 7px 5px rgb(255, 255, 255,0.3);
+    transition: 0.5s;
+}
+.box img{
+    height: 100%;
+    width: 100%;
+}
+.box-btn{
+    position: relative;
+    bottom: 60px;
+    left: 50px;
+    background: linear-gradient(rgb(255, 255, 255,0.08), transparent);
+    backdrop-filter: blur(10px);
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+}
+
+#cards{
+    height: 300px;
+    width: 100%;
+    position: relative;
+    top: 220px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#cards img{
+    height: 250px;
+    border: 2px solid black;
+}
+#cards img:hover{
+    transform: scale(1.03);
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+#contact{
+    height: 250px;
+    width: 100%;
+    background-color: rgb(8, 70, 70);
+    position: relative;
+    top: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#contact h1{
+    font-family: 'Jost', sans-serif;
+    font-size: 3rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #23a598;
+}
+#contact p{
+    font-family: 'Didact Gothic', sans-serif;
+    position: relative;
+    bottom: 10px;
+    margin: 0px 0px 20px 0px;
+    letter-spacing: 1px;
+    color: #75bcb5;
+}
+.card-btn{
+    font-size: 20px;
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+    width: 250px;
+    padding: 4px;
+    margin: 0px 3px;
+    border: none;
+    background-color: rgba(8, 163, 186, 0.862);
+    cursor: pointer;
+}
+.card-btn-left{
+    border-radius: 20px 0px 00px 20px;
+}
+.card-btn-right{
+    border-radius: 0px 20px 20px 0px;
+
+}
+.card-btn:hover{
+    background-color: goldenrod;
+    transition: 0.5s;
+}
+.card-btn:active{
+    background-color: rgb(0, 255, 0);
+}
+
+footer{
+    position: relative;
+    top:200px;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+}
+footer p{
+    color: rgb(2, 26, 35);
+    text-align: center;
+    font-family: 'Didact Gothic', sans-serif;
+    position: relative;
+    top: 15px;
+}
